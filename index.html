@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" manifest="offline.manifest">
+<head>
+	<meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<title>Timer</title>
+	<link rel="stylesheet" href="timer.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+	<div id="timer">OUTPUT</div>
+	<div id="controls">
+		<!--
+			Need:
+				Font size button
+		-->
+		<button id="startButton">Start</button>
+		<button id="resetButton">Reset</button>
+		<input id="time" type="text" value="10"/>
+		<input id="yellowTime" type="text" value="3"/>
+		<input id="redTime" type="text" value="1"/>
+	</div>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="timer.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			var readyToRun = SetupPage('#startButton','#resetButton', '#time', '#yellowTime', '#redTime', '#timer');
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+div#controls
+{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+div#timer
+{
+	margin-top: 45px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 370px;
+	font-family: sans-serif;
+	line-height: 1.4em;
+	vertical-align: center;
+}
+
+button
+{
+-moz-border-bottom-colors: none;
+-moz-border-image: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+background: none repeat scroll 0 0 #CCCCCC;
+border-color: #666666 #AAAAAA #AAAAAA #666666;
+border-right: 1px solid #AAAAAA;
+border-style: solid;
+border-width: 1px;
+color: #444444;
+cursor: pointer;
+height: 40px;
+margin-top: 5px;
+margin-left: 5px;
+font-size: 30px;
+}
+
+body.started
+{
+	background-color: #00FF00;
+}
+
+body.warning
+{
+	background-color: #FFFF00;
+}
+
+body.danger
+{
+	background-color: #FF0000;
+}
+
+body.complete, body.complete.s1
+{
+	background-color: #FFF;
+}
+
+body.complete.s0
+{
+	background-color: #F00;
+}
